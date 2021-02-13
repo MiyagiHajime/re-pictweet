@@ -1,5 +1,23 @@
-.texts
-  - @tweets.each do |tweet|
-    %h1.tt
-      = tweet.name
-      = tweet.text
+.TopViewWapper
+  = render 'tweets/head'
+  .MainBody
+    %section.NewItemArea
+      - @tweets.each do |tweet|
+        .card{:style => "width: 20rem;"}
+          = image_tag 'cotegory-2.jpeg', alt: 'test', class: 'bd-placeholder-img.card-img-top'
+          .card-body
+            %h5.card-title 
+              = tweet.name
+            %p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+          %ul.list-group.list-group-flush
+            %li.list-group-item Cras justo odio
+            %li.list-group-item Dapibus ac facilisis in
+            %li.list-group-item Vestibulum at eros
+          .card-body
+            %a.card-link{:href => "#"} Card link
+            %a.card-link{:href => "#"} Another link
+  .texts
+    - @tweets.each do |tweet|
+      %h1
+        = tweet.name
+        = tweet.text

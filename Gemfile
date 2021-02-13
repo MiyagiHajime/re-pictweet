@@ -62,6 +62,9 @@ end
 gem 'tzinfo-data'
 
 gem 'pry-rails'
-gem 'compass-rails', '3.1.0'
-gem 'sprockets', '3.7.2'
+
 gem 'haml-rails'
+
+#bootstrap
+gem 'bootstrap', '~> 4.3.1'
+gem "jquery-ui-rails"
