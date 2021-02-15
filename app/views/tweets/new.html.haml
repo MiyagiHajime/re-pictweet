@@ -1,0 +1,15 @@
+.FormWapper
+  .FormHaed
+    %p.TitleText 入力欄
+  .FormBody
+    %section.InputForm-Items
+      = form_with  class: 'InputForm-Item' , model: @tweet do |f|
+        .InputForm-Item__Name
+          %p aaaaaa
+          = f.text_field :name, class: 'Name', maxlength: 11, placeholder: '名前の入力'
+        .InputForm-Item__Text
+          %p aaaaaa
+          = f.text_field :text, class: 'Text', maxlength: 11, placeholder: '本文を入力'
+        .InputForm-Item__Image
+          %p aaaaaa
+          = f.text_field :image, class: 'Image', maxlength: 11, placeholder: '画像の入力'

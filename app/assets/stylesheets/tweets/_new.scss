@@ -1,0 +1,72 @@
+.FormWapper{
+  height: 100vh;
+  widows: 100%;
+  background-color: yellow;
+  .FormHaed{
+    p.TitleText{
+      color: #CCFFFF;
+      text-align: center;
+      padding-top: 10px;
+      font-size: 100px;
+      font-style: italic;
+      text-shadow: 0 7px 7px rgba(255, 255, 255, 1);
+    }
+  }
+  .FormBody{
+    height: 80%;
+    width: 100%;
+    background-color: aqua;
+    position: relative;
+    .InputForm-Items{
+      width: 90%;
+      height: 90%;
+      background-color: black;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      .InputForm-Item{
+        height: 100%;
+        width: 100%;
+        &__Name{
+          height: 33%;
+          width: 100%;
+          background-color: red;
+          .Name{
+            width: 80%;
+            height: 20%;
+            border: solid 2px lightblue;
+            border-radius: 10px;
+            margin-left: 10%;
+            margin-top: 2%;
+          }
+        }
+        &__Text{
+          height: 34%;;
+          width: 100%;
+          background-color: blue;
+          .Text{
+            width: 80%;
+            height: 70%;
+            border: solid 2px lightblue;
+            border-radius: 10px;
+          }
+        }
+        &__Image{
+          height: 33%;;
+          width: 100%;
+          background-color: palevioletred;
+          .Image{
+            width: 80%;
+            height: 20%;
+            border: solid 2px lightblue;
+            border-radius: 10px;
+
+          }
+        }
+      }
+    }
+  }
+}

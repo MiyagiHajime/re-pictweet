@@ -1,23 +1,33 @@
-.HaedContena{
-  height: 8%;
+.haedContena{
+  height: 15%;
   width: 100%;
-  background-color: red;
-  .HaedContena-title{
+  .haedContena-Top{
+    margin: 0 4% 0;
     background-color: green;
     height: 70%;
+    display: flex;
+    padding-top: 20px;
+    .haedContena-TopTitle{
+      background-color: #ea352d;
+
+    }
+    
+    
     &__word{
       color: black;
       font-style: italic;
-      font-size: 60px;
-      font-weight: 900;
+      font-size: 50px;
+      font-weight: 800;
       text-shadow: 0 7px 7px rgba(255, 255, 255, 1);
-      text-align: center;
-      // padding-top: 10px;
+      // text-align: center;
+      text-align: left;
+      margin-left: 20px;
+      padding-top: 10px;
     }
   }
   .HaedContena-Item{
     background-color: blue;
-    height: 30%;
+    height: 35%;
   }
 }
 .card__footer--btn{
